@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
   symbolPath: any = [];
   echartsInstance: any;
   loading: boolean = true;
+  display: boolean = false;
 
   constructor(private elRef: ElementRef) {}
 
@@ -41,7 +42,8 @@ export class HomeComponent implements OnInit {
     var symbolSize = 20;
     setTimeout(() => {
       this.loading = false;
-    }, 3000);
+      this.display = true;
+    }, 2000);
 
     this.cData = [
       [10, 50, ''],

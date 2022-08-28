@@ -3,7 +3,8 @@
         <div class="row">
             <!-- LEFT part -->
             <div class="col-sm-9 pl-0">
-                <div class="box left">
+                <app-placeholder-chart *ngIf="loading"></app-placeholder-chart>
+                <div class="box left" [ngClass]="{'display-block' : loading }">
 
                     <div class="d-flex justify-content-between">
                         <div>
@@ -72,7 +73,7 @@
                             </div>
                         </div>
                         <!-- LIfe plan popup -->
-                        <div class="ag-wrapper" *ngIf="isLifePlanModalShow">
+                        <div class="ag-wrapper" *ngIf="isLifePlanModalShow && loading" >
                             <div class="k-lp-popup" >
                                 <div class="d-flex">
                                     <div class="k-input">
@@ -94,6 +95,7 @@
                             </div>
                         </div>
                     </div>      
+                    <!-- <app-placeholder-chart *ngIf="loading"></app-placeholder-chart> -->
                 </div>
             </div>
 

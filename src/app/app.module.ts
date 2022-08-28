@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
 import { PlaceholderEventComponent } from './placeholder-event/placeholder-event.component';
+import { PlaceholderChartComponent } from './placeholder-chart/placeholder-chart.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PlaceholderEventComponent } from './placeholder-event/placeholder-event
     HeaderComponent,
     PlaceholderComponent,
     PlaceholderEventComponent,
+    PlaceholderChartComponent
   ],
   imports: [
     BrowserModule,

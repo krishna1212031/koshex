@@ -865,7 +865,6 @@ class HomeComponent {
             animationEasing: 'elasticOut',
             animationDelayUpdate: (idx) => idx * 5,
         };
-        alert('Goal added successfully!');
         this.error = '';
         this.amount = 0;
         this.goalTitle = '';

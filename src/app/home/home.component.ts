@@ -384,7 +384,6 @@ export class HomeComponent implements OnInit {
       animationDelayUpdate: (idx) => idx * 5,
     };
 
-    alert('Goal added successfully!');
     this.error = '';
     this.amount = 0;
     this.goalTitle = '';

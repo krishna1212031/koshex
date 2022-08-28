@@ -1407,7 +1407,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               return idx * 5;
             }
           };
-          alert('Goal added successfully!');
           this.error = '';
           this.amount = 0;
           this.goalTitle = '';
